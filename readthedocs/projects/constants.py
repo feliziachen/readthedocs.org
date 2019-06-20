@@ -80,7 +80,10 @@ PRIVATE = 'private'
 
 PRIVACY_CHOICES = (
     (PUBLIC, _('Public')),
-    (PROTECTED, _('Protected')),
+    # Remove Protected for now since it cause confusions to users.
+    # There is a better way to manage this by using Version states
+    # See: https://github.com/rtfd/readthedocs.org/issues/5321
+    # (PROTECTED, _('Protected')),
     (PRIVATE, _('Private')),
 )
 
